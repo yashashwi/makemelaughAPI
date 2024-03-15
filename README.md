@@ -5,11 +5,11 @@
 1. This is a MakeMeLaughAPI written in DotnetCore 6.0.
 2. This is using IISExpress or Kestrel for Hosting on Dev environment.
 3. We have used # SWAGGER to demonstrate the front-end.
-4. # This Solution has 2 components - MakeMeLaughAPI (Rest Service) and MakeMeLaughCore(DLL)
+4. This Solution has 2 components - MakeMeLaughAPI (Rest Service) and MakeMeLaughCore(DLL)
 
 
 
-a. # Why MakeMeLaughCore is a DLL?
+a. Why MakeMeLaughCore is a DLL?
     Answer: This is the core logic for this API to execute. API is just dumb service to process the request.
     At any time, we can update the logics in MakeMeLaughCore dll and inject the new DLL to the existing Hosted API, without unmounting the service.
     This would lead to zero downtime while upgrade. We only would need to unmount the service if new endpoints are being added.
